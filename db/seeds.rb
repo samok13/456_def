@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+5.times do
+employee = Employee.create({first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email:Faker::Internet.email})
+end
+
+2.times do
+team = Team.create({name: Faker::Name.name })
+end
+
+progress_report = ProgressReport.create({body: Faker::Hipster.paragraph})

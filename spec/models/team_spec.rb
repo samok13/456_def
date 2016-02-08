@@ -21,4 +21,3 @@ describe Team do
     end
   end
 end
-

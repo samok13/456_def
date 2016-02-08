@@ -48,6 +48,18 @@ Given the hash above, complete the following:
 ### Your HTML form here:
 
 ```html
+<form action = '/users' git smethod = 'post'>
+<input name="utf8" type="hidden" value="✓" >
+<input name="authenticity_token" type="hidden" value="401b09eab3c013d4ca54922bb802bec8fd5318192b0a75f201d8b3727429080fb337591abd3e44453b954555b7a0812e1081c39b740293f765eae731f5a65ed1">
+<input type = 'text' name = 'user[username]'>
+<input type = 'email' name = 'user[email]'>
+<input type = 'password' name = 'user[password]'>
+<input type = 'password' name = 'user[password_confirm]'>
+<button type = 'submit'>Submit</button>
+</form>
+
+
+
 ```
 
 
@@ -128,31 +140,31 @@ Create Rails models that have the following attributes and associations:
         - `last_name:string`
         - `email:string`
     - associations:
-        - has many `teams`
+        done- has many `teams`
             - teams of which the employee is a member
-        - has many `progress reports`
+        Done- has many `progress reports`
             - progress reports the employee wrote about a team
-        - has many `owned teams`
+        Done- has many `owned teams`
             - teams of which the employee is the owner
 
 1. Team
     - attributes:
         - `name:string`
     - associations:
-        - belongs to `owner`
+        Done- belongs to `owner`
             - employee that owns the team
-        - has many `members`
+        done- has many `members`
             - employees that are members of the team
-        - has many `progress_reports`
+       Done - has many `progress_reports`
             - progress reports written about this team
 
 1. Progress Report
     - attributes:
         - `body:text`
     - associations:
-        - belongs to `author`
+        Done- belongs to `author`
             - employee that wrote the progress report
-        - belongs to `team`
+        -Done belongs to `team`
             - team that the progress report is written about
 
 ### Seeding

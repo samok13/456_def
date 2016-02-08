@@ -11,6 +11,7 @@ describe Employee do
     end
 
 
+
     it 'many owned teams' do
       expect { employee.owned_teams }.to_not raise_error
     end
